@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico Integrador - Tomas M. Saini</title>
+    <link rel="stylesheet" href="../Trabajo-pratico-integrador/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="ingreso" id="ingreso">
+    <div class="ingreso-titulo">
+        <h2 class="ingreso-titulo_titulo">
+            Trabajo práctico integrador V1
+        </h2>
+    </div>
+    <button class="btn-ingreso" id="btningreso">Ingresar al sistema</button>
+</div>
+
+<div class="principal">
+    <div class="main">
+        <header>Trabajo práctico integrador - Tomas M. Saini </header>
+        <form method="post" action="sistema.php">
+            <div class="datos-madre">
+                <div class="datos">
+                    <label for="fecha">Fecha: <input type="date" name="fecha"></label>
+                    <label for="">Nombre: <input type="text" name="nombre" placeholder="Inserte su nombre"></label>
+                    <label for="">Apellido: <input type="text" name="apellido" placeholder="Inserte su apellido"></label>
+                    <label for="">Impuesto: <input type="number" name="impuesto" placeholder="Valores en %."> </label>
+                    
+                </div>
+            </div>
+        
+    </div>
+    <div class="detalles-principal">
+        <div class="detalles-titulo">
+            <h2>Detalles</h2>
+        </div>
+        <div class="detalles-tabla">
+            <table>
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <tr>
+                
+                    <td><input type="text" placeholder="Inserte codigo de producto" name="codigo1"></td>
+                    <td><input type="text" placeholder="Inserte el producto" name="desc1"></td>
+                    <td><input type="text"name="cantidad1" placeholder="Inserte la cantidad"></td>
+                    <td><input type="text"name="precio1" placeholder="Inserte el precio"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="codigo2" placeholder="Inserte codigo de producto"></td>
+                    <td><input type="text"name="desc2" placeholder="Inserte el producto"></td>
+                    <td><input type="text"name="cantidad2" placeholder="Inserte la cantidad"></td>
+                    <td><input type="text"name="precio2" placeholder="Inserte el precio"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"name="codigo3" placeholder="Inserte codigo de producto"></td>
+                    <td><input type="text"name="desc3" placeholder="Inserte el producto"></td>
+                    <td><input type="text"name="cantidad3" placeholder="Inserte la cantidad"></td>
+                    <td><input type="text"name="precio3" placeholder="Inserte el precio"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="botonera">
+            <button type="submit" class="btn-control">Enviar</button>
+        </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,223 @@
+:root {
+    --celeste: #728FBC;
+    --azul-oscuro: #00385d;
+    --blanco: #ffffff;
+}
+
+html {
+
+    font-family: 'Roboto', sans-serif;
+}
+/* Pantalla de ingreso */
+
+.ingreso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 95vh;
+    background: var(--azul-oscuro);
+    border-radius: 25px;
+
+
+}
+.btn-ingreso{
+    padding: 0.7rem;
+    width: 250px;
+    background-color:#1dbb17;
+    border-radius: 8PX;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+.btn-ingreso:hover {
+    cursor:  pointer;
+    background-color: #169012;
+
+    color: var(--blanco);
+}
+.ingreso-titulo_titulo{
+    color: #ffffff;
+}
+
+/* FIN DE PANTALLA DE INGRESO */
+
+/* PANTALLA PRINCIPAL DATOS PERSONALES */
+
+.principal {
+    display: none;
+}
+.main {
+    background: var(--celeste);
+    width: 100%;
+    height: 90%;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main header {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.datos{
+    text-align: center;
+    display: flex;
+    flex: row;
+    width: 100%;
+    padding: 1rem 1rem 1.5rem 1rem;
+    margin: 0 0rem 0 0rem;
+    text-align: center;
+    justify-content: center;
+    gap: 12rem;
+    width: 90vw;
+}
+.datos label {
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100px;   
+
+}
+.datos input , .datos select {
+ border: none;
+ border-radius: 8px;
+ height: 20px;
+ margin-left: 5px;
+ margin-bottom: 0.3rem;
+ width: 170px;
+ text-align: center;
+
+
+}
+
+.datos input:focus {
+    outline: none;
+    text-align: center;
+}
+
+.parrafo {
+    width: 100%;
+}
+/* ---------------------FIN DATOS PERSONALES ------------------------ */
+
+/* ----- SECTOR DETALLES ------------ */
+
+.detalles-principal {
+    margin-top: 0.3rem;
+    padding: 0.5rem 0 1rem 0 ;
+    width: 100%;
+    height: 390px;
+    background-color: var(--celeste);
+    border-radius: 0 0 25px 25px;
+    position: relative;
+}
+.detalles-titulo h2 {
+    margin-top: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.detalles-tabla table {
+    text-align: center;
+    width: 100%;
+}
+
+.detalles-tabla table th {
+    color: #ffffff;
+}
+
+.detalles-tabla table tr td input {
+    width: 300px;
+    height: 20px;
+    padding: 2px;
+    padding-left: 5px;
+    border-radius: 8px;
+    border: none;
+    margin: 2px;
+    text-align: center;
+}
+.detalles-tabla table tr td input:focus {
+    outline: none;
+    text-align: center;
+}
+
+.resultados {
+    height: 100px;
+}
+
+.resultados h3 {
+    margin-left: 1rem;
+}
+
+.botonera {
+    display: flex;
+    justify-content: center;
+}
+.btn-control {
+    text-align: center;
+    margin: 3rem 1rem 0 1rem;
+    width: 150px;
+    background-color:#1dbb17;
+    border: solid 1px #0c6a09;
+    border-radius: 8px;
+    padding: 0.6rem;
+    color: black;
+    font-weight: bold;
+
+}
+.btn-control:hover {
+    cursor:  pointer;
+    background-color: #169012;
+    color: #ffffff;
+}
+
+.titulo {
+    color: blue;
+}
+
+/* ------------------ ESTILOS DEL PHP *-------------------*/
+
+.div-php {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    background: var(--celeste);
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+
+.div-php p {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 0 0;
+}
+
+.div-tablas {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #728FBC;
+    margin-bottom: 3px;
+    padding: 5px 0 5px 0;
+}
+
+td {
+    border: #00385d solid 1px;
+}
