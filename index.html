@@ -26,10 +26,14 @@
         <form method="post" action="sistema.php">
             <div class="datos-madre">
                 <div class="datos">
-                    <label for="fecha">Fecha: <input type="date" name="fecha"></label>
-                    <label for="">Nombre: <input type="text" name="nombre" placeholder="Inserte su nombre"></label>
-                    <label for="">Apellido: <input type="text" name="apellido" placeholder="Inserte su apellido"></label>
-                    <label for="">Impuesto: <input type="number" name="impuesto" placeholder="Valores en %."> </label>
+                    <label for="fecha">Fecha: <input type="date" name="fecha" required></label>
+                    <label for="">Nombre: <input type="text" name="nombre" placeholder="Inserte su nombre" required></label>
+                    <label for="">Apellido: <input type="text" name="apellido" placeholder="Inserte su apellido" required></label>
+                    <label for="">Impuesto: <select name="impuesto" id="">
+                        <option value="0">Sin impuestos</option>
+                        <option value="10">10%</option>
+                        <option value="21">21%</option>
+                    </select> </label>
                     
                 </div>
             </div>
@@ -47,22 +51,22 @@
                 <th>Precio</th>
                 <tr>
                 
-                    <td><input type="text" placeholder="Inserte codigo de producto" name="codigo1"></td>
-                    <td><input type="text" placeholder="Inserte el producto" name="desc1"></td>
-                    <td><input type="text"name="cantidad1" placeholder="Inserte la cantidad"></td>
-                    <td><input type="text"name="precio1" placeholder="Inserte el precio"></td>
+                    <td><input type="number" placeholder="Inserte codigo de producto" name="codigo1" required></td>
+                    <td><input type="text" placeholder="Inserte el producto" name="desc1"required></td>
+                    <td><input type="number"name="cantidad1" placeholder="Inserte la cantidad"required></td>
+                    <td><input type="number"name="precio1" placeholder="Inserte el precio"required></td>
                 </tr>
                 <tr>
-                    <td><input type="text" name="codigo2" placeholder="Inserte codigo de producto"></td>
-                    <td><input type="text"name="desc2" placeholder="Inserte el producto"></td>
-                    <td><input type="text"name="cantidad2" placeholder="Inserte la cantidad"></td>
-                    <td><input type="text"name="precio2" placeholder="Inserte el precio"></td>
+                    <td><input type="number" name="codigo2" placeholder="Inserte codigo de producto"required></td>
+                    <td><input type="text"name="desc2" placeholder="Inserte el producto"required></td>
+                    <td><input type="number"name="cantidad2" placeholder="Inserte la cantidad"required></td>
+                    <td><input type="number"name="precio2" placeholder="Inserte el precio"required></td>
                 </tr>
                 <tr>
-                    <td><input type="text"name="codigo3" placeholder="Inserte codigo de producto"></td>
-                    <td><input type="text"name="desc3" placeholder="Inserte el producto"></td>
-                    <td><input type="text"name="cantidad3" placeholder="Inserte la cantidad"></td>
-                    <td><input type="text"name="precio3" placeholder="Inserte el precio"></td>
+                    <td><input type="number"name="codigo3" placeholder="Inserte codigo de producto"required></td>
+                    <td><input type="text"name="desc3" placeholder="Inserte el producto"required></td>
+                    <td><input type="number"name="cantidad3" placeholder="Inserte la cantidad"required></td>
+                    <td><input type="number"name="precio3" placeholder="Inserte el precio"required></td>
                 </tr>
             </table>
         </div>

@@ -221,3 +221,12 @@ html {
 td {
     border: #00385d solid 1px;
 }
+
+
+.columna-izquierda { 
+    width: 200px;
+}
+
+.columna-derecha {
+    width: 100px;
+}
